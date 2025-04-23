@@ -40,4 +40,11 @@ public final class Car {
     return seatCount;
   }
 
+  @Override public String toString() {
+    return "Car{" +
+           "manufacturer='" + manufacturer + '\'' +
+           ", licensePlate='" + licensePlate + '\'' +
+           ", seatCount=" + seatCount +
+           '}';
+  }
 }
