@@ -1,29 +1,10 @@
-# Hello GraalWasm
+Hello GraalWasm
+=======================
 
-```
-sdk list java # check the latest graalvm 25
-sdk install java 25.ea.18-graal
-sdk use java 25.ea.18-graal
-```
+Build Java into WebAssembly using GraalWasm.
 
-```
-brew install binaryen
-```
+# References
 
-```
-./mvnw clean package
-```
-
-```
-$ ls -la target/hello-graalwasm*
--rw-r--r--@ 1 toshiaki  staff       4942 Apr 23 17:48 target/hello-graalwasm-1.0-SNAPSHOT.jar
--rw-r--r--@ 1 toshiaki  staff      94524 Apr 23 17:48 target/hello-graalwasm.js
--rw-r--r--@ 1 toshiaki  staff    6478667 Apr 23 17:48 target/hello-graalwasm.js.wasm
--rw-r--r--@ 1 toshiaki  staff  108304691 Apr 23 17:48 target/hello-graalwasm.js.wat
-```
-
-```
-$ node target/hello-graalwasm.js
-Car creation failed!
-"seatCount" must be greater than or equal to 2
-```
+* GraalWasm: https://www.graalvm.org/webassembly/
+* GraalWasm Documentation: https://www.graalvm.org/webassembly/docs/
+* Wasm(WebAssembly) with Java and GraalVM: https://senoritadeveloper.medium.com/wasm-webassembly-with-java-and-graalvm-326e16afd348
