@@ -41,7 +41,8 @@
                     </executions>
                     <configuration>
                         <buildArgs>
-                            <buildArg>--tool:svm-wasm</buildArg><!-- enable WebAssembly backend -->
+                            <!-- enable WebAssembly backend -->
+                            <buildArg>--tool:svm-wasm</buildArg>
                             <!-- include debug names in Wasm module -->
                             <!-- <buildArg>-g</buildArg>-->
                         </buildArgs>
